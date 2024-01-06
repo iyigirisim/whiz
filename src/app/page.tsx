@@ -20,7 +20,7 @@ export default function Home() {
             alt="Hiring Manager"
             width={420}
           />
-          <Text className="text-6xl font-thin">Hi, I'm a</Text>
+          <Text className="text-6xl font-thin">Hi, I&apos;m a</Text>
           <Text className="text-3xl font-bold" id="underline">
             Hiring Manager!
           </Text>
