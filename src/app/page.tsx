@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation";
 export default function Home() {
   const router = useRouter();
   return (
-    <main className="min-h-screen">
+    <main className="min-h-full">
       <Flex className="flex flex-row items-center justify-between p-8 gap-4">
         <Button
           onClick={() => router.push("/corporate")}
@@ -22,7 +22,7 @@ export default function Home() {
           />
           <Text className="text-6xl font-thin">Hi, I&apos;m a</Text>
           <Text className="text-3xl font-bold" id="underline">
-            Hiring Manager!
+            Hiring Manager<a id="invisible">!</a>
           </Text>
         </Button>
         <Flex className="flex-col items-center justify-center w-2/3">

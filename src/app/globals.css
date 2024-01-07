@@ -16,6 +16,7 @@
 body {
   color: var(--background);
   background: var(--foreground);
+  min-height: 100vh;
 }
 
 .scaling:hover {
@@ -24,5 +25,27 @@ body {
   }
   #underline {
     text-decoration: underline;
+  }
+
+  #invisible {
+    visibility: visible;
+  }
+}
+
+.scaling {
+  #invisible {
+    visibility: hidden;
+  }
+}
+
+.mark {
+  #invisible-mark {
+    visibility: hidden;
+  }
+}
+
+.mark:hover {
+  #invisible-mark {
+    visibility: visible;
   }
 }
