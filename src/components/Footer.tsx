@@ -11,7 +11,7 @@ import {
 export default function Footer() {
   const router = useRouter();
   return (
-    <main className="p-8 flex flex-row justify-between">
+    <main className="px-8 md:px-16 pt-2 pb-6 flex flex-row justify-between">
       <Flex direction={"row"} justify={"start"} align={"center"} gap={8}>
         <Button
           onClick={() => router.push("/")}
@@ -26,10 +26,10 @@ export default function Footer() {
           About<a id="invisible-mark">!</a>
         </Button>
         <Button
-          onClick={() => router.push("/contact")}
+          onClick={() => router.push("/say-hi")}
           className="text-sm font-normal hover:underline mark"
         >
-          Contact<a id="invisible-mark">!</a>
+          Say Hi<a id="invisible-mark">!</a>
         </Button>
       </Flex>
       <Flex direction={"row"} justify={"end"} align={"center"} gap={8}>
@@ -41,7 +41,7 @@ export default function Footer() {
             className="hover:text-pink-600"
           />
         </Button>
-        <Button onClick={() => router.push("/")}>
+        <Button onClick={() => router.push("/about")}>
           <Icon
             as={RiLinkedinBoxFill}
             h={32}
@@ -49,7 +49,7 @@ export default function Footer() {
             className="hover:text-blue-600"
           />
         </Button>
-        <Button onClick={() => router.push("/")}>
+        <Button onClick={() => router.push("/contact")}>
           <Icon
             as={RiTwitterXFill}
             h={28}
