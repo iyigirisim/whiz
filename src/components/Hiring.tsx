@@ -9,7 +9,7 @@ export default function Hiring() {
     <>
       <Button
         onClick={() => router.push("/corporate")}
-        className="flex flex-col items-center justify-center scaling"
+        className="overflow-hidden flex flex-col items-center justify-center scaling"
       >
         <Image
           className="rounded-full"
